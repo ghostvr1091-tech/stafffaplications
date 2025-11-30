@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Discord Staff Application</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #1e1e2f;
+      color: #fff;
+      display: flex;
+      justify-content: center;
+      padding: 40px;
+    }
+    .container {
+      background: #2a2a40;
+      padding: 30px;
+      border-radius: 12px;
+      max-width: 600px;
+      width: 100%;
+      box-shadow: 0 0 10px rgba(0,0,0,0.4);
+    }
+    h1 {
+      text-align: center;
+    }
+    label {
+      display: block;
+      margin-top: 15px;
+      font-weight: bold;
+    }
+    input, textarea, select {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border-radius: 8px;
+      border: none;
+    }
+    button {
+      width: 100%;
+      margin-top: 20px;
+      padding: 12px;
+      background: #5865f2;
+      color: white;
+      border: none;
+      border-radius: 10px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #4752c4;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Discord Staff Application</h1>
+
+    <form action="mailto:your@email.com" method="post" enctype="text/plain">
+      <label>Discord Username (Include #tag or @handle)</label>
+      <input type="text" required />
+
+      <label>Age</label>
+      <input type="number" min="10" max="100" required />
+
+      <label>Why do you want to be staff?</label>
+      <textarea rows="4" required></textarea>
+
+      <label>Do you have prior moderation experience?</label>
+      <select required>
+        <option value="">Select an option</option>
+        <option>Yes</option>
+        <option>No</option>
+      </select>
+
+      <label>If yes, please explain</label>
+      <textarea rows="3"></textarea>
+
+      <label>How active can you be per week?</label>
+      <input type="text" required />
+
+      <label>Anything else you'd like us to know?</label>
+      <textarea rows="3"></textarea>
+
+      <button type="submit">Submit Application</button>
+    </form>
+  </div>
+</body>
+</html>
